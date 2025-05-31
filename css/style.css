@@ -1,0 +1,156 @@
+/* Reset-enkelhet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header och nav-styling */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero-sektionen */
+#hero {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.85;
+}
+
+#hero h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Sektioner generellt */
+section {
+  padding: 2rem 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Om oss – bandmedlemmar */
+.bandmedlemmar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bandmedlemmar .medlem {
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.bandmedlemmar img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Spelschema */
+#spelschema ul {
+  list-style: disc inside;
+  margin-left: 1rem;
+}
+
+/* Media-inbäddningar */
+.media-embed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.media-embed iframe {
+  border: none;
+}
+
+/* Footer */
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+.sociala-medier {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+.sociala-medier a {
+  color: #555;
+  text-decoration: none;
+}
+
+.sociala-medier a:hover {
+  text-decoration: underline;
+}
+
+/* Enkel responsivitet */
+@media (max-width: 600px) {
+  .bandmedlemmar {
+    flex-direction: column;
+  }
+  #hero h2 {
+    font-size: 1.4rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
