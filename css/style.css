@@ -13,7 +13,7 @@ body {
 
 /* Header och nav-styling */
 header {
-  background-color: #222;
+  background-color: #222; /* Mörk bakgrund för header */
   color: #fff;
   padding: 1rem 2rem;
 }
@@ -153,4 +153,18 @@ footer p {
     flex-direction: column;
     gap: 0.75rem;
   }
+}
+
+/* Gör header till flex-container så logga och rubrik hamnar bredvid varandra */
+header {
+  display: flex;
+  align-items: center; /* Vertikal centrering */
+  gap: 0.75rem;        /* Avstånd mellan logga och text */
+  padding: 1rem 2rem;  /* Behåll tidigare padding eller justera vid behov */
+}
+
+/* Sätt logotypens höjd så den ligger i nivå med h1-texten */
+header .logo {
+  height: 7.5rem; /* Justera ev. till 2rem/3rem beroende på font-size */
+  width: auto;    /* Proportionellt omlogotypen är cirkulär */
 }
