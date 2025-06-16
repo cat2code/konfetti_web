@@ -1,4 +1,5 @@
-/* Reset-enkelhet */
+/* css/style.css */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +12,28 @@ body {
   color: #333;
 }
 
-/* Header och nav-styling */
+/* Header & Navigation */
 header {
-  background-color: #222; /* Mörk bakgrund för header */
+  background-color: #222;
   color: #fff;
+  display: flex;
+  align-items: center;
   padding: 1rem 2rem;
+  gap: 1rem
+}
+
+header .logo {
+  height: 7rem;
+  width: auto;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 nav ul {
@@ -28,17 +42,45 @@ nav ul {
   gap: 1.5rem;
 }
 
-nav a {
+nav a,
+.header-lang a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
+nav a:hover,
+.header-lang a:hover {
   text-decoration: underline;
 }
 
-/* Hero-sektionen */
+/* Social Icon Buttons + Language Switcher Container */
+.header-buttons {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Language Switcher */
+.header-lang {
+  font-size: 0.9rem;
+}
+
+/* Icon Button */
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button img {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: invert(100%);
+}
+
+/* Hero Section */
 #hero {
   position: relative;
   text-align: center;
@@ -47,7 +89,6 @@ nav a:hover {
 
 #hero img {
   width: 100%;
-  height: auto;
   display: block;
   opacity: 0.85;
 }
@@ -59,17 +100,16 @@ nav a:hover {
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 2rem;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
-/* Sektioner generellt */
+/* Sections */
 section {
   padding: 2rem 1rem;
 }
 
 h2 {
   margin-bottom: 1rem;
-  font-size: 1.8rem;
   color: #222;
 }
 
@@ -77,7 +117,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Om oss – bandmedlemmar */
+/* Band Members */
 .bandmedlemmar {
   display: flex;
   flex-wrap: wrap;
@@ -91,17 +131,10 @@ p {
 
 .bandmedlemmar img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
 }
 
-/* Spelschema */
-#spelschema ul {
-  list-style: disc inside;
-  margin-left: 1rem;
-}
-
-/* Media-inbäddningar */
+/* Media Embeds */
 .media-embed {
   display: flex;
   flex-wrap: wrap;
@@ -124,47 +157,19 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
-.sociala-medier {
+.sociala-medier,
+.sociala-medier a {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding: 0;
-}
-
-.sociala-medier a {
   color: #555;
   text-decoration: none;
 }
 
-.sociala-medier a:hover {
-  text-decoration: underline;
-}
-
-/* Enkel responsivitet */
+/* Responsive */
 @media (max-width: 600px) {
-  .bandmedlemmar {
-    flex-direction: column;
-  }
-  #hero h2 {
-    font-size: 1.4rem;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-}
-
-/* Gör header till flex-container så logga och rubrik hamnar bredvid varandra */
-header {
-  display: flex;
-  align-items: center; /* Vertikal centrering */
-  gap: 0.75rem;        /* Avstånd mellan logga och text */
-  padding: 1rem 2rem;  /* Behåll tidigare padding eller justera vid behov */
-}
-
-/* Sätt logotypens höjd så den ligger i nivå med h1-texten */
-header .logo {
-  height: 7.5rem; /* Justera ev. till 2rem/3rem beroende på font-size */
-  width: auto;    /* Proportionellt omlogotypen är cirkulär */
+  .bandmedlemmar { flex-direction: column; }
+  #hero h2 { font-size: 1.4rem; }
+  nav ul { flex-direction: column; gap: 0.75rem; }
 }
