@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,10 +8,16 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="alternate" href="https://yourdomain.com/index.html" hreflang="sv" />
   <link rel="alternate" href="https://yourdomain.com/index-en.html" hreflang="en" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<body id="body">
   <header style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-    <img src="images/konfetti.png" alt="Konfetti logotyp" class="logo" style="margin-right: 20px;" />
+    <img src="images/konfetti.png" alt="Konfetti logotyp" class="logo"/>
     <div class="header-content" style="flex: 1; text-align: center;">
       <h1>Konfetti</h1>
       <nav>
@@ -45,86 +52,79 @@
 
   <!-- Sektion Om oss -->
   <section id="om-oss">
-    <h2>Om oss</h2>
-    <p>
-      Vi är sex passionerade musiker och akademiker från Lund som älskar att skapa magi på dansgolvet. Vårt band 
-      började som ett husband inom Lunds studentliv men det har över åren efter plugg och plonk utvecklats till ett partyband
-      som står på egna ben, fullfjättrad med en läkare och fem ingenjörer. 
-      <br><br> Konfetti grundades 2025 och vi spelat på allt från baler, klubbar till bröllop och andra fester och privata event. 
-      <br><br> F.d Malmö Nation Husband Kapellet 2021 - 2024.
-    </p>
-    <div class="bandmedlemmar">
-      <div class="medlem">
-        <img src="images/marcus.png" alt="Bild på medlem 1" />
-        <h3>Marcus Johansson</h3>
-        <p>Gitarr & Sång</p>
-      </div>
-      <div class="medlem">
-        <img src="images/lovisa.png" alt="Bild på medlem 2" />
-        <h3>Lovisa Von Sicard</h3>
-        <p>Saxofon</p>
-        <!-- Här är hyperlänk till Lovisas Instagram -->
-        <p>
+    <div class="container">
+      <h2>Om oss</h2>
+      <p>
+        Vi är sex passionerade musiker och akademiker från Lund som älskar att skapa magi på dansgolvet. Vårt band
+        började som ett husband inom Lunds studentliv men det har över åren efter plugg och plonk utvecklats till ett
+        partyband
+        som står på egna ben, fullfjättrad med en läkare och fem ingenjörer.
+        <br><br> Konfetti grundades 2025 och vi spelat på allt från baler, klubbar till bröllop och andra fester och
+        privata event.
+        <br><br> F.d Malmö Nation Husband Kapellet 2021 - 2024.
+      </p>
+    </div>
+    <div class="container">
+      <div class="bandmedlemmar">
+        <div class="medlem">
+          <img src="images/marcus.png" alt="Bild på medlem 1" />
+          <h3>Marcus Johansson</h3>
+          <p>Gitarr & Sång</p>
+        </div>
+        <div class="medlem">
+          <img src="images/lovisa.png" alt="Bild på medlem 2" />
+          <h3>Lovisa Von Sicard</h3>
+          <p>Saxofon</p>
+          <!-- Här är hyperlänk till Lovisas Instagram -->
           <a href="https://instagram.com/saxyvisa" target="_blank" rel="noopener">
             @saxyvisa
           </a>
-        </p>
+        </div>
+        <!-- Eliot Petrén -->
+        <div class="medlem">
+          <!-- byt ut src till en bildfil du själv sparar under images/ (t.ex. eliot.jpg) -->
+          <img src="images/eliot.png" alt="Eliot Petrén" />
+          <h3>Eliot Petrén</h3>
+          <p>Bas</p>
+        </div>
+        <!-- Oskar Wikfeldt -->
+        <div class="medlem">
+          <img src="images/oskar.png" alt="Oskar Wikfeldt" />
+          <h3>Oskar Wikfeldt</h3>
+          <p>Gitarr, Piano &amp; Trumpet</p>
+        </div>
+        <!-- Patrik Johansson -->
+        <div class="medlem">
+          <img src="images/patrik.png" alt="Patrik Johansson" />
+          <h3>Patrik Johansson</h3>
+          <p>Piano, Synth &amp; Sång</p>
+        </div>
+        <!-- Erik Karlsson -->
+        <div class="medlem">
+          <img src="images/erik.png" alt="Erik Karlsson" />
+          <h3>Erik Karlsson</h3>
+          <p>Trummor &amp; Pad</p>
+        </div>
+        <!-- Om du vill lägga till fler, kopiera mallen ovan och ändra namn/roll -->
       </div>
-      <!-- Eliot Petrén -->
-    <div class="medlem">
-      <!-- byt ut src till en bildfil du själv sparar under images/ (t.ex. eliot.jpg) -->
-      <img src="images/eliot.png" alt="Eliot Petrén" />
-      <h3>Eliot Petrén</h3>
-      <p>Bas</p>
-    </div>
-    <!-- Oskar Wikfeldt -->
-    <div class="medlem">
-      <img src="images/oskar.png" alt="Oskar Wikfeldt" />
-      <h3>Oskar Wikfeldt</h3>
-      <p>Gitarr, Piano &amp; Trumpet</p>
-    </div>
-    <!-- Patrik Johansson -->
-    <div class="medlem">
-      <img src="images/patrik.png" alt="Patrik Johansson" />
-      <h3>Patrik Johansson</h3>
-      <p>Piano, Synth &amp; Sång</p>
-    </div>
-  <!-- Erik Karlsson -->
-    <div class="medlem">
-      <img src="images/erik.png" alt="Erik Karlsson" />
-      <h3>Erik Karlsson</h3>
-      <p>Trummor &amp; Pad</p>
-    </div>
-    <!-- Om du vill lägga till fler, kopiera mallen ovan och ändra namn/roll -->
     </div>
   </section>
 
   <!-- Sektion Media -->
-  <section id="media">
+  <section id="media" class="container">
     <h2>Lyssna & se</h2>
     <div class="media-embed">
       <!-- Spotify och YouTube inbäddning -->
-      <iframe
-        src="https://open.spotify.com/embed/playlist/4e0Gn3Dr8eGCo3wzNOJn60?si=12670f3525b646dc"
-        width="300"
-        height="380"
-        frameborder="0"
-        allowtransparency="true"
-        allow="encrypted-media"
-      ></iframe>
-      <iframe
-        width="300"
-        height="169"
-        src="https://www.youtube.com/embed/v7nJJm3A0NA"
-        frameborder="0"
+      <iframe src="https://open.spotify.com/embed/playlist/4e0Gn3Dr8eGCo3wzNOJn60?si=12670f3525b646dc" width="300"
+        height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe width="300" height="169" src="https://www.youtube.com/embed/v7nJJm3A0NA" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+        allowfullscreen></iframe>
     </div>
   </section>
 
   <!-- Sektion Kontakt -->
-  <section id="kontakt">
+  <section id="kontakt" class="container">
     <h2>Kontakt & bokning</h2>
     <p>E-post: <a href="mailto:konfetti.partyband@gmail.com">konfetti.partyband@gmail.com</a></p>
     <p>Telefon: 076 - 213 95 33 (Eliot Petrén)</p>
@@ -140,6 +140,8 @@
   </footer>
 
   <!-- Koppla eventuellt JavaScript -->
+  <script src="js/confetti.min.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>

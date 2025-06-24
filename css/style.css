@@ -1,25 +1,40 @@
 /* css/style.css */
 /* Reset */
+:root {
+  --primary: #90ad4b;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+*,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
   line-height: 1.6;
-  color: #333;
+  color: #1d4247;
 }
 
 /* Header & Navigation */
 header {
-  background-color: #222;
+  background-color: var(--primary);
   color: #fff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 1rem 2rem;
-  gap: 1rem
+  gap: 1rem;
 }
 
 header .logo {
@@ -46,7 +61,7 @@ nav a,
 .header-lang a {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 nav a:hover,
@@ -56,7 +71,6 @@ nav a:hover,
 
 /* Social Icon Buttons + Language Switcher Container */
 .header-buttons {
-  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -85,10 +99,14 @@ nav a:hover,
   position: relative;
   text-align: center;
   margin-bottom: 2rem;
+  padding: 0;
+  max-width: initial;
 }
 
 #hero img {
   width: 100%;
+  max-height: 500px;
+  object-fit: cover;
   display: block;
   opacity: 0.85;
 }
@@ -99,18 +117,18 @@ nav a:hover,
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 2rem;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  font-size: 3rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Sections */
 section {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem;  
 }
 
 h2 {
   margin-bottom: 1rem;
-  color: #222;
+  color: var(--primary);
 }
 
 p {
@@ -119,20 +137,75 @@ p {
 
 /* Band Members */
 .bandmedlemmar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+@media (min-width: 544px) {
+  .bandmedlemmar {
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .bandmedlemmar {
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
 
 .bandmedlemmar .medlem {
-  flex: 1 1 200px;
+
   text-align: center;
+  grid-column: auto;
+  grid-row: auto;
 }
 
 .bandmedlemmar img {
   width: 100%;
   border-radius: 8px;
 }
+
+.bandmedlemmar p {
+  margin-bottom: 0;
+}
+
+.container, .container-sm {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 544px) {
+  .container, .container-sm {
+    max-width: 719px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
 
 /* Media Embeds */
 .media-embed {
@@ -169,7 +242,42 @@ footer p {
 
 /* Responsive */
 @media (max-width: 600px) {
-  .bandmedlemmar { flex-direction: column; }
-  #hero h2 { font-size: 1.4rem; }
-  nav ul { flex-direction: column; gap: 0.75rem; }
+  .bandmedlemmar {
+    flex-direction: column;
+  }
+
+  #hero h2 {
+    font-size: 1.4rem;
+  }
+
+}
+
+
+
+@media (min-width: 544px) {
+  h2 {
+    font-size: 2rem;
+  }
+  
+  header {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 3rem;
+  }
 }
