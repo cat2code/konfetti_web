@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="alternate" href="https://yourdomain.com/index.html" hreflang="sv" />
   <link rel="alternate" href="https://yourdomain.com/index-en.html" hreflang="en" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
   <header style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-    <img src="images/konfetti.png" alt="Konfetti logotyp" class="logo" style="margin-right: 20px;" />
+    <img src="images/konfetti.png" alt="Konfetti logotyp" class="logo"/>
     <div class="header-content" style="flex: 1; text-align: center;">
       <h1>Konfetti</h1>
       <nav>
@@ -43,15 +47,18 @@
 
   <!-- About Us -->
   <section id="about-us">
-    <h2>About Us</h2>
-    <p>
-      We are six passionate musicians and academics from Lund who love creating magic on the dance floor.
-      Our group started as a student-husband band and has since evolved into a fully-fledged party band
-      featuring one doctor and five engineers.
-      <br><br> Founded in 2025, we’ve played everything from formal balls and clubs to weddings and private events.
-      <br><br> Formerly Malmö Nation’s house band (2021–2024).
-    </p>
-    <div class="bandmedlemmar">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        We are six passionate musicians and academics from Lund who love creating magic on the dance floor.
+        Our group started as a student-husband band and has since evolved into a fully-fledged party band
+        featuring one doctor and five engineers.
+        <br><br> Founded in 2025, we’ve played everything from formal balls and clubs to weddings and private events.
+        <br><br> Formerly Malmö Nation’s house band (2021–2024).
+      </p>
+    </div>
+    <div class="container">
+      <div class="bandmedlemmar">
       <div class="medlem">
         <img src="images/marcus.png" alt="Bild på medlem 1" />
         <h3>Marcus Johansson</h3>
@@ -94,11 +101,12 @@
       <p>Drums &amp; Pad</p>
     </div>
     <!-- Om du vill lägga till fler, kopiera mallen ovan och ändra namn/roll -->
+      </div>
     </div>
   </section>
 
   <!-- Media -->
-  <section id="media">
+  <section id="media" class="container">
     <h2>Listen & Watch</h2>
     <div class="media-embed">
       <iframe
@@ -117,7 +125,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="container">
     <h2>Contact & Booking</h2>
     <p>Email: <a href="mailto:konfetti.partyband@gmail.com">konfetti.partyband@gmail.com</a></p>
     <p>Phone: +46 76 213 95 33 (Eliot Petrén)</p>
@@ -131,6 +139,7 @@
     </ul>
   </footer>
 
+  <script src="js/confetti.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
