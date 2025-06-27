@@ -115,7 +115,7 @@
     <h2>Lyssna & se</h2>
     <div class="media-embed">
       <!-- Spotify och YouTube inbäddning -->
-      <iframe src="https://open.spotify.com/embed/playlist/4e0Gn3Dr8eGCo3wzNOJn60?si=12670f3525b646dc" width="300"
+      <iframe src="https://open.spotify.com/embed/playlist/7mhgYWMUVLKnpceCPE7KLG?si=27d095fb53e64abd" width="300"
         height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       <iframe width="300" height="169" src="https://www.youtube.com/embed/v7nJJm3A0NA" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -128,7 +128,33 @@
     <h2>Kontakt & bokning</h2>
     <p>E-post: <a href="mailto:konfetti.partyband@gmail.com">konfetti.partyband@gmail.com</a></p>
     <p>Telefon: 076 - 213 95 33 (Eliot Petrén)</p>
-    <!-- I POC-fasen räcker mailto-länk; senare kan du lägga in riktigt formulär -->
+    <form class="contact-form" action="mailto:konfetti.partyband@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Namn</label>
+      <input type="text" id="name" name="Namn" required>
+
+      <label for="email">E-post</label>
+      <input type="email" id="email" name="E-post" required>
+
+      <label for="phone">Telefonnummer</label>
+      <input type="tel" id="phone" name="Telefon" required>
+
+      <label for="event-type">Typ av event</label>
+      <select id="event-type" name="Eventtyp">
+        <option value="Bröllop">Bröllop</option>
+        <option value="Företagsevent">Företagsevent</option>
+        <option value="Födelsedagsfest">Födelsedagsfest</option>
+        <option value="Festival">Festival</option>
+        <option value="Annat">Annat</option>
+      </select>
+
+      <label for="event-date">Datum för event</label>
+      <input type="date" id="event-date" name="Datum">
+
+      <label for="description">Beskrivning</label>
+      <textarea id="description" name="Beskrivning" rows="4"></textarea>
+
+      <button type="submit">Skicka</button>
+    </form>
   </section>
 
   <!-- Footer -->
