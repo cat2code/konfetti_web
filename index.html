@@ -128,7 +128,33 @@
     <h2>Kontakt & bokning</h2>
     <p>E-post: <a href="mailto:konfetti.partyband@gmail.com">konfetti.partyband@gmail.com</a></p>
     <p>Telefon: 076 - 213 95 33 (Eliot Petrén)</p>
-    <!-- I POC-fasen räcker mailto-länk; senare kan du lägga in riktigt formulär -->
+    <form class="contact-form" action="mailto:konfetti.partyband@gmail.com" method="post" enctype="text/plain">
+      <label for="namn">Namn:</label>
+      <input type="text" id="namn" name="Namn" required>
+
+      <label for="epost">E-post:</label>
+      <input type="email" id="epost" name="E-post" required>
+
+      <label for="telefon">Telefonnummer:</label>
+      <input type="tel" id="telefon" name="Telefon">
+
+      <label for="eventtyp">Typ av event:</label>
+      <select id="eventtyp" name="Typ av event">
+        <option value="Bröllop">Bröllop</option>
+        <option value="Företagsevent">Företagsevent</option>
+        <option value="Födelsedagsfest">Födelsedagsfest</option>
+        <option value="Festival">Festival</option>
+        <option value="Annat">Annat</option>
+      </select>
+
+      <label for="datum">Datum för event:</label>
+      <input type="date" id="datum" name="Datum">
+
+      <label for="beskrivning">Beskrivning:</label>
+      <textarea id="beskrivning" name="Beskrivning" rows="4"></textarea>
+
+      <button type="submit">Skicka</button>
+    </form>
   </section>
 
   <!-- Footer -->
