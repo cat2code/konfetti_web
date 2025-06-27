@@ -110,7 +110,7 @@
     <h2>Listen & Watch</h2>
     <div class="media-embed">
       <iframe
-        src="https://open.spotify.com/embed/playlist/4e0Gn3Dr8eGCo3wzNOJn60"
+        src="https://open.spotify.com/embed/playlist/7mhgYWMUVLKnpceCPE7KLG?si=27d095fb53e64abd"
         width="300" height="380"
         frameborder="0" allow="encrypted-media">
       </iframe>
@@ -129,6 +129,33 @@
     <h2>Contact & Booking</h2>
     <p>Email: <a href="mailto:konfetti.partyband@gmail.com">konfetti.partyband@gmail.com</a></p>
     <p>Phone: +46 76 213 95 33 (Eliot Petrén)</p>
+    <form class="contact-form" action="mailto:konfetti.partyband@gmail.com" method="post" enctype="text/plain">
+      <label for="name-en">Name</label>
+      <input type="text" id="name-en" name="Name" required>
+
+      <label for="email-en">Email</label>
+      <input type="email" id="email-en" name="Email" required>
+
+      <label for="phone-en">Phone Number</label>
+      <input type="tel" id="phone-en" name="Phone" required>
+
+      <label for="event-type-en">Type of event</label>
+      <select id="event-type-en" name="Event Type">
+        <option value="Wedding">Wedding</option>
+        <option value="Company Event">Company Event</option>
+        <option value="Birthday Party">Birthday Party</option>
+        <option value="Festival">Festival</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="event-date-en">Event Date</label>
+      <input type="date" id="event-date-en" name="Date">
+
+      <label for="description-en">Description</label>
+      <textarea id="description-en" name="Description" rows="4"></textarea>
+
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <!-- Footer -->
