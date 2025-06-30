@@ -258,6 +258,13 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
+.photo-credit {
+  font-size: 0.8rem;
+  color: #555;
+  text-align: right;
+  margin-top: 1rem;
+}
+
 .sociala-medier,
 .sociala-medier a {
   list-style: none;
