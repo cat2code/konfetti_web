@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const galleryImages = Array(6).fill('bandet3.png');
+  // galleryImages is generated at build time by scripts/generateGallery.js
+  if (typeof galleryImages === 'undefined') return;
   const grid = document.querySelector('.gallery-grid');
   if (!grid) return;
 
   galleryImages.forEach(src => {
     const a = document.createElement('a');
-    a.href = `images/${src}`;
+    a.href = src;
     const img = document.createElement('img');
-    img.src = `images/${src}`;
+    img.src = src;
     img.alt = 'Konfetti gallery image';
     a.appendChild(img);
     grid.appendChild(a);
