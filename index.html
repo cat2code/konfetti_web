@@ -17,7 +17,7 @@
 
 <body id="body">
   <header style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-    <img src="images/konfetti.png" alt="Konfetti logotyp" class="logo"/>
+    <img src="assets/konfetti.png" alt="Konfetti logotyp" class="logo"/>
     <div class="header-content" style="flex: 1; text-align: center;">
       <h1>Konfetti</h1>
       <nav>
@@ -35,10 +35,10 @@
         <a href="index-en.html">EN</a>
       </div>
       <a href="https://www.instagram.com/konfettipartyband" class="icon-button" target="_blank" rel="noopener">
-        <img src="images/instagram.svg" alt="Instagram" />
+        <img src="assets/instagram.svg" alt="Instagram" />
       </a>
       <a href="mailto:konfetti@partyband.se" class="icon-button">
-        <img src="images/mail.svg" alt="Mail" />
+        <img src="assets/mail.svg" alt="Mail" />
       </a>
     </div>
   </header>
@@ -46,8 +46,7 @@
 
   <!-- Hero-sektionen med placeholder-bild -->
   <section id="hero">
-    <!-- Lägg en bild i images/hero.jpg eller använd en placeholder-länk tills vidare -->
-    <img src="images/bandet.png" alt="Bandet på scen" />
+    <img src="assets/images/bandet.png" alt="Bandet på scen" />
     <h2>Vi tar festen till nästa nivå!</h2>
     <p class="photo-credit">
       Omslagsbild av
@@ -75,32 +74,32 @@
       <div class="bandmedlemmar">
         <!-- Marcus Johansson -->
         <div class="medlem">
-          <img src="images/marcus.png" alt="Bild på medlem 1" />
+          <img src="assets/images/members/marcus.png" alt="Bild på medlem 1" />
           <h3>Marcus Johansson</h3>
           <p>Gitarr & Sång</p>
         </div>
         <!-- Patrik Johansson -->
         <div class="medlem">
-          <img src="images/patrik.png" alt="Patrik Johansson" />
+          <img src="assets/images/members/patrik.png" alt="Patrik Johansson" />
           <h3>Patrik Johansson</h3>
           <p>Piano, Synth &amp; Sång</p>
         </div>
         <!-- Erik Karlsson -->
         <div class="medlem">
-          <img src="images/erik.png" alt="Erik Karlsson" />
+          <img src="assets/images/members/erik.png" alt="Erik Karlsson" />
           <h3>Erik Karlsson</h3>
-          <p>Trummor </p>
+          <p>Trummor</p>
         </div>
         <!-- Eliot Petrén -->
         <div class="medlem">
           <!-- byt ut src till en bildfil du själv sparar under images/ (t.ex. eliot.jpg) -->
-          <img src="images/eliot.png" alt="Eliot Petrén" />
+          <img src="assets/images/members/eliot.png" alt="Eliot Petrén" />
           <h3>Eliot Petrén</h3>
           <p>Bas</p>
         </div>
         <!-- Lovisa Von Sicard -->
         <div class="medlem">
-          <img src="images/lovisa.png" alt="Bild på medlem 2" />
+          <img src="assets/images/members/lovisa.png" alt="Bild på medlem 2" />
           <h3>Lovisa Von Sicard</h3>
           <p>Saxofon</p>
           <!-- Här är hyperlänk till Lovisas Instagram -->
@@ -110,7 +109,7 @@
         </div>
         <!-- Oskar Wikfeldt -->
         <div class="medlem">
-          <img src="images/oskar.png" alt="Oskar Wikfeldt" />
+          <img src="assets/images/members/oskar.png" alt="Oskar Wikfeldt" />
           <h3>Oskar Wikfeldt</h3>
           <p>Gitarr, Piano &amp; Trumpet</p>
         </div>
@@ -141,11 +140,7 @@
   <!-- Galleri Sektion -->
   <section id="gallery" class="container">
     <h2>Galleri</h2>
-    <div class="gallery-grid">
-      <a href="images/bandet3.png">
-        <img src="images/bandet3.png" alt="Konfetti upptr\xC3\xA4der" />
-      </a>
-    </div>
+    <div class="gallery-grid"></div>
   </section>
 
   <!-- Sektion Kontakt -->
@@ -193,6 +188,7 @@
   <!-- Koppla eventuellt JavaScript -->
   <script src="js/confetti.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
 </body>
 
 </html>
