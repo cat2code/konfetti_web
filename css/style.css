@@ -244,9 +244,19 @@ p {
   }
 }
 
-.gallery-grid img {
+.gallery-grid a {
+  position: relative;
   width: 100%;
-  height: auto;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.gallery-grid img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
 
